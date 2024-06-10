@@ -1,0 +1,190 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2024-06-10T23:00:00.000Z",
+  "__export_source": "insomnia.desktop.app:v2023.3.0",
+  "resources": [
+    {
+      "_id": "req_cadastro_produto",
+      "parentId": "fld_api_produtos",
+      "modified": 0,
+      "created": 0,
+      "url": "{{ base_url }}/api/produtos",
+      "name": "Cadastro de Produto",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"nome\": \"Produto Teste\",\n  \"preco\": 10.0\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1623417412796,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_consultar_todos_produtos",
+      "parentId": "fld_api_produtos",
+      "modified": 0,
+      "created": 0,
+      "url": "{{ base_url }}/api/produtos",
+      "name": "Consulta de Todos Produtos",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1623417412795,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_consultar_produto_por_id",
+      "parentId": "fld_api_produtos",
+      "modified": 0,
+      "created": 0,
+      "url": "{{ base_url }}/api/produtos/:id",
+      "name": "Consulta de Produto por ID",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [
+        {
+          "name": "id",
+          "value": "1"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1623417412794,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_atualizar_produto",
+      "parentId": "fld_api_produtos",
+      "modified": 0,
+      "created": 0,
+      "url": "{{ base_url }}/api/produtos/:id",
+      "name": "Atualização de Produto",
+      "description": "",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"nome\": \"Produto Atualizado\",\n  \"preco\": 20.0\n}"
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "value": "1"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1623417412793,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_deletar_produto",
+      "parentId": "fld_api_produtos",
+      "modified": 0,
+      "created": 0,
+      "url": "{{ base_url }}/api/produtos/:id",
+      "name": "Remoção de Produto",
+      "description": "",
+      "method": "DELETE",
+      "body": {},
+      "parameters": [
+        {
+          "name": "id",
+          "value": "1"
+        }
+      ],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1623417412792,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_api_produtos",
+      "parentId": "wrk_Insomnia",
+      "modified": 0,
+      "created": 0,
+      "name": "API de Produtos",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1623417412791,
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_Insomnia",
+      "parentId": null,
+      "modified": 0,
+      "created": 0,
+      "name": "Insomnia",
+      "description": "",
+      "_type": "workspace"
+    }
+  ]
+}

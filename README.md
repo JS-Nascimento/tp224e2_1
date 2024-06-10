@@ -23,3 +23,11 @@ API RESTful para operações CRUD em uma lista de produtos.
 3. Compile e execute o projeto:
    ```bash
    ./gradlew bootRun
+   
+4. Coleção de Testes para o Insomnia:
+   ```bash
+   Insomnia-collection.json
+
+5. Definir a url base da API:
+   ```bash
+   http://localhost:8080
